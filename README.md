@@ -25,6 +25,8 @@
 data Maybe a = Just a | Nothing deriving (Eq, Ord)
 ```
 
+> Reference: `data Int = ... | -3 | -2 | -1 | 0 | 1 | 2 | 3 | ...`
+
 
 
 
