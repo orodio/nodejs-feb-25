@@ -1,9 +1,11 @@
+# An experiment in using monad like structures with promises
+
 ## James Hunter
  - Twitter: [@cccc00](http://twitter.com/cccc00)
  - Github: [orodio](http://github.com/orodio)
  - This repo: [bit.ly/maybejs](http://bit.ly/maybejs)
 
-# An experiment in using monad like structures with promises
+
 
 
 
@@ -12,6 +14,9 @@
 ```haskell
 data Maybe a = Just a | Nothing deriving (Eq, Ord)
 ```
+
+
+
 
 # Our custom Maybe
 
@@ -27,10 +32,17 @@ function Nope(status, value) {
 }
 ```
 
+
+
+
+
 # bind
 ```haskell
 >>= :: m a -> (a -> m b) -> m b
 ```
+
+
+
 
 # Our bind
 ```javascript
@@ -39,6 +51,9 @@ function bind (maybe, fn) {
   return fn(maybe.value)
 }
 ```
+
+
+
 
 # Bind in use
 ```javascript
@@ -71,6 +86,10 @@ const m6 = bind(m5, h)   // Nope "Zero is icky"
 const m7 = bind(m6, f)   // Nope "Zero is icky"
 ```
 
+
+
+
+
 # Our bind can take more than one function
 ```javascript
 
@@ -78,10 +97,17 @@ const m1 = new Just(2)
 const m2 = bind(m1, g, g, h, h, g, h, f) // Nope "Zero is icky"
 ```
 
+
+
+
 # If the first thing we pass our bind isnt already a `maybe` we make it one
 ```javascript
 const bind(5, g, f) // Just 100
 ```
+
+
+
+
 
 # What if instead of a number our value was an event?
 ```javascript
@@ -117,6 +143,10 @@ const bad_event = {
 validateEvent(bad_event) // Nope "Invalid Event, Type was not in the allowed type whitelist"
 ```
 
+
+
+
+
 # Used in an express router
 ```javascript
 const handleEvent = event => bind(event, maybeValidate, maybeAuthorize, maybePersist, maybeSuccess)
@@ -126,6 +156,9 @@ app.post(`/actions`, (req, res) => {
   res.status(status).send(value)
 })
 ```
+
+
+
 
 
 # What about you know async stuff? Wasnt this talk about promises?
@@ -144,6 +177,9 @@ app.post(`/actions`, (req, res) => {
     .then(({ status, value }) => res.status(status).send(value) )
 })
 ```
+
+
+
 
 # What about the errors?
 
