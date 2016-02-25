@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import { get, post }        from "bc-http"
 
-const POLL_RATE = 1000
+const POLL_RATE = 100
 
 const inc = (uuid) => {
   post(`/api/v1/actions`, {

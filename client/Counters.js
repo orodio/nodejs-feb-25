@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import { get, post }        from "bc-http"
 import Counter              from "./Counter"
 
-const POLL_RATE = 1000
+const POLL_RATE = 100
 
 const badType = () => {
   post(`/api/v1/actions`, {
