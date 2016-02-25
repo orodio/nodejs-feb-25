@@ -226,7 +226,7 @@ async function maybePersist (event) {
 ```
 
 
-> Time for a completely contrived demo
+> Time for a completely contrived [demo](http://localhost:3000/)
 
 
 # Takeaway
