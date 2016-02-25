@@ -1,6 +1,7 @@
 ## James Hunter
  - Twitter: [@cccc00](http://twitter.com/cccc00)
  - Github: [orodio](http://github.com/orodio)
+ - This repo: [bit.ly/maybejs](http://bit.ly/maybejs)
 
 # An experiment in using monad like structures with promises
 
