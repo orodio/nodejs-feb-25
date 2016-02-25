@@ -109,6 +109,8 @@ const m1 = new Just(2)
 const m2 = bind(m1, g, g, h, h, g, h, f) // Nope "Zero is icky"
 ```
 
+> haskell doesnt need this: `m2 = (Just 2) >>= g >>= g >>= h >>= h >>= g >>= h >>= f`
+
 
 
 
