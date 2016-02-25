@@ -233,6 +233,7 @@ async function maybePersist (event) {
 - Everything was standard composition until we added in the promises
 - Other languages have amazing things
 - The implementation of the core concept of this talk comes in at 37 lines
+- Until we added in the promises and the persitence (side affects) it was really easy to test
 
 
 
