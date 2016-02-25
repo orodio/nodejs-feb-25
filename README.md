@@ -1,6 +1,6 @@
 ## James Hunter
- - Twitter: @cccc00
- - Github: orodio
+ - Twitter: [@cccc00](http://twitter.com/cccc00)
+ - Github: [orodio](http://github.com/orodio)
 
 # An experiment in using monad like structures with promises
 
