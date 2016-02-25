@@ -87,9 +87,6 @@ function h (x) {
   return new Just(x - 4)
 }
 
-bind(g(4), f) // Just { status:200, value:64 }
-              // Just 64
-
 const m1 = bind(new Just(2), g) // Just { status:200, value:4 }
                                 // Just 4
 
