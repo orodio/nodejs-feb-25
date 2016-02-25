@@ -125,6 +125,12 @@ const bind(5, g, f) // Just 100
 
 # What if instead of a number our value was an event?
 ```javascript
+const example_event = {
+  type: "COUNTER_ADD",
+  counter_uuid: "asdf1234",
+  name: "bob",
+}
+
 function hasType (event) {
   if (event.type == null) return new Nope(400, "Invalid Event, No type")
   return new Just(event)
