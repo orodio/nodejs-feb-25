@@ -18,7 +18,7 @@ data Maybe a = Just a | Nothing deriving (Eq, Ord)
 
 
 # Similar concept in production at
-- [Versioning](http://sitepoint.com/versioning)
+- [SitePoint Versioning](http://sitepoint.com/versioning)
 
 
 
