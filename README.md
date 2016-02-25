@@ -206,6 +206,13 @@ async function maybePersist (event) {
 ```
 
 
+> Time for a completely contrived demo
+
+
+# Takeaway
+- Everything was standard composition until we added in the promises
+- Other languages have amazing things
+- The implementation of the core concept of this talk comes in at 37 lines
 
 
 
