@@ -9,6 +9,16 @@
 
 
 
+
+
+# Similar concept in production at
+- [SitePoint Versioning](http://sitepoint.com/versioning)
+
+
+
+
+
+
 # Idea came from: `Maybe a` in haskell
 
 ```haskell
@@ -17,8 +27,6 @@ data Maybe a = Just a | Nothing deriving (Eq, Ord)
 
 
 
-# Similar concept in production at
-- [SitePoint Versioning](http://sitepoint.com/versioning)
 
 
 
