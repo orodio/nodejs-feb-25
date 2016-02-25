@@ -51,7 +51,7 @@ function Nope(status, value) {
 
 
 
-# bind
+# bind (haskell)
 ```haskell
 >>= :: m a -> (a -> m b) -> m b
 ```
