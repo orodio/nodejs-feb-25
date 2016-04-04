@@ -225,10 +225,6 @@ async function maybePersist (event) {
 }
 ```
 
-
-> Time for a completely contrived [demo](http://localhost:3000/)
-
-
 # Takeaway
 - Everything was standard composition until we added in the promises
 - Other languages have amazing things
